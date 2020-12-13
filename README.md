@@ -1,24 +1,43 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an example Rails 6 application for demonstrating the usage of <a href="https://github.com/ozone4real/pubsueque" >Pubsueque</a>
+Documentation of the library can be found in its <a href="https://github.com/ozone4real/pubsueque/blob/master/README.md" >Read me</a>
 
-Things you may want to cover:
+# Usage
 
-* Ruby version
+- Clone this repository
 
-* System dependencies
+```
+  $ git clone https://github.com/ozone4real/pubsueque-usage.git
+```
 
-* Configuration
+- cd into the directory and run:
 
-* Database creation
+```
+  bundle install
+```
 
-* Database initialization
+- Export your Google Cloud configuration file to your environment
 
-* How to run the test suite
+```
+   $ export GOOGLE_APPLICATION_CREDENTIALS=/path/to/config/file
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Start the rails server
+```
+ $ rails server
+```
 
-* Deployment instructions
+- On another shell tab, export the Google Cloud configuration file to the environment then start the background job server
 
-* ...
+```
+  $ pubsueque
+```
+
+For demonstration, the app contains a route: `/jobs` which enqueues 3 different jobs in the background and renders a view. So you can load the route in your browser on localhost:3000/jobs
+
+Jobs enqueued in the action:
+- JobsJob: delayed 30 seconds, IO bound
+- UserJob: to be executed immediately, CPU bound
+- ExceptionJob - raises an exception
+
