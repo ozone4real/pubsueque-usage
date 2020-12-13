@@ -5,19 +5,19 @@ Documentation of the library can be found in its <a href="https://github.com/ozo
 
 # Usage
 
-- Clone this repository
+Clone this repository
 
 ```
   $ git clone https://github.com/ozone4real/pubsueque-usage.git
 ```
 
-- cd into the directory and run:
+cd into the directory and run:
 
 ```
   bundle install
 ```
 
-- Export your Google Cloud configuration file to your environment
+Export your Google Cloud configuration file to your environment
 
 ```
    $ export GOOGLE_APPLICATION_CREDENTIALS=/path/to/config/file
@@ -28,7 +28,7 @@ Start the rails server
  $ rails server
 ```
 
-- On another shell tab, export the Google Cloud configuration file to the environment then start the background job server
+On another shell tab, export the Google Cloud configuration file to the environment then start the background job server
 
 ```
   $ pubsueque
