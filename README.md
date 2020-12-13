@@ -14,7 +14,7 @@ Clone this repository
 cd into the directory and run:
 
 ```
-  bundle install
+  $ bundle install
 ```
 
 Export your Google Cloud configuration file to your environment
