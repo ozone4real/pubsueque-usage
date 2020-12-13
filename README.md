@@ -50,6 +50,8 @@ For demonstration, the app contains the following:
 
 - Gemfile has `pubsueque` as a gem
 
+- A config/initializers/analytics.rb file that has code for gathering metrics
+
 
 
 
