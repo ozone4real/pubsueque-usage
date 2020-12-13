@@ -34,10 +34,24 @@ Start the rails server
   $ pubsueque
 ```
 
-For demonstration, the app contains a route: `/jobs` which enqueues 3 different jobs in the background and renders a view. So you can load the route in your browser on localhost:3000/jobs
+For demonstration, the app contains the following:
 
-Jobs enqueued in the action:
-- JobsJob: delayed 30 seconds, IO bound
-- UserJob: to be executed immediately, CPU bound
-- ExceptionJob - raises an exception
+- A route: `/jobs` which enqueues 3 different jobs in the background and renders a view. So you can load the route in your browser on localhost:3000/jobs
+
+  Jobs enqueued in the action:
+  - JobsJob: delayed 30 seconds, IO bound
+  - UserJob: to be executed immediately, CPU bound
+  - ExceptionJob - raises an exception
+
+
+- A config file that configures the server in config/initializers/pubsueque.rb. Info on how to configure the server can be found in the library's  [Read me](https://github.com/ozone4real/pubsueque/blob/master/README.md)
+
+- ActiveJob configured to use `pubsueque` as its adapter in config/environments/development.rb and config/environments/productiob.rb
+
+- Gemfile has the `pubsueque` gem
+
+
+
+
+
 
