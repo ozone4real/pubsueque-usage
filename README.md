@@ -1,6 +1,6 @@
 # README
 
-This is an example Rails 6 application for demonstrating the usage of <a href="https://github.com/ozone4real/pubsueque" >Pubsueque</a>
+This is an example Rails 6 application for demonstrating the usage of <a href="https://github.com/ozone4real/pubsueque" >Pubsueque</a>.
 Documentation of the library can be found in its <a href="https://github.com/ozone4real/pubsueque/blob/master/README.md" >Read me</a>
 
 # Usage
