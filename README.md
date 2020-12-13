@@ -46,7 +46,7 @@ For demonstration, the app contains the following:
 
 - A config file that configures the server in config/initializers/pubsueque.rb. Info on how to configure the server can be found in the library's  [Read me](https://github.com/ozone4real/pubsueque/blob/master/README.md).
 
-- ActiveJob configured to use `pubsueque` as its adapter in config/environments/development.rb and config/environments/productiob.rb
+- ActiveJob configured to use `pubsueque` as its adapter in config/environments/development.rb and config/environments/production.rb
 
 - Gemfile has `pubsueque` as a gem
 
