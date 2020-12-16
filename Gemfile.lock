@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/ozone4real/pubsueque.git
-  revision: a3507b6d8551f860ada7b00580ffd1f131817984
+  revision: 5248e8db726965ba196e7a81dbdf6c064c6f470f
   specs:
     pubsueque (0.1.0)
       google-cloud-pubsub
