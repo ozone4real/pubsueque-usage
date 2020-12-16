@@ -41,7 +41,7 @@ For demonstration, the app contains the following:
 
   Jobs enqueued in the action:
   - JobsJob: delayed 30 seconds, IO bound
-  - UserJob: to be executed immediately, CPU bound
+  - UserJob: to be executed immediately, CPU/memory bound
   - ExceptionJob - raises an exception
 
 
