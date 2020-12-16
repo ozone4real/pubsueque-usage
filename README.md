@@ -15,6 +15,7 @@ cd into the directory and run:
 
 ```
   $ bundle install
+  $ yarn install
 ```
 
 Export your Google Cloud configuration file to your environment
